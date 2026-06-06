@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental | Dra. Ana Patricia Arellano</title>
+    <meta name="description" content="Cuidado dental profesional y especializado en Mérida, Yucatán. Cirugías, endodoncias y ortodoncia con la Dra. Ana Patricia Arellano. ¡Agenda tu cita hoy!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo-area" id="logo-link">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">CLÍNICA DENTAL</span>
+                    <span class="logo-subtitle">Dra. Ana Patricia Arellano</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="navigation-menu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#ubicacion" class="nav-link">Ubicación</a>
+            </nav>
+            
+            <div class="header-cta">
+                <span class="emergency-text">Urgencias: <a href="tel:9991402191" id="emergency-phone">999.140.2191</a></span>
+                <a href="https://wa.me/529991402191" class="btn btn-secondary btn-header-cta" id="whatsapp-quick-cta" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-background-gradient"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline">U.N.A.M. | Céd. Prof. 841104</span>
+                    <h1 class="hero-title">Diseñamos Sonrisas Saludables y Brillantes</h1>
+                    <p class="hero-description">
+                        Experimenta un cuidado dental de primer nivel con tecnología de vanguardia y un trato cálido y humano. Especialistas en cirugía oral, endodoncia y ortodoncia en Mérida.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-badge">
+                            <i class="fa-solid fa-circle-check"></i> Consultas urgentes
+                        </div>
+                        <div class="feature-badge">
+                            <i class="fa-solid fa-circle-check"></i> Citas flexibles
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/hero_dental.png" alt="Paciente sonriendo en Clínica Dental" class="hero-img">
+                    </div>
+                    
+                    <!-- Glassmorphism Floating Booking Form -->
+                    <div class="booking-card">
+                        <h3 class="booking-title">Reserva tu Cita</h3>
+                        <p class="booking-subtitle">Déjanos tus datos para ponernos en contacto</p>
+                        
+                        <form id="appointment-form" class="booking-form">
+                            <div class="form-group">
+                                <label for="form-name"><i class="fa-regular fa-user"></i> Nombre Completo</label>
+                                <input type="text" id="form-name" placeholder="Ej. Juan Pérez" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-phone"><i class="fa-solid fa-phone"></i> Teléfono celular</label>
+                                <input type="tel" id="form-phone" placeholder="Ej. 9991234567" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-date"><i class="fa-regular fa-calendar"></i> Fecha</label>
+                                    <input type="date" id="form-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-time"><i class="fa-regular fa-clock"></i> Hora</label>
+                                    <input type="time" id="form-time" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message"><i class="fa-regular fa-comment"></i> Síntomas o Motivo (Opcional)</label>
+                                <textarea id="form-message" rows="2" placeholder="Describe brevemente..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-appointment-btn">
+                                Agendar por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="servicios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Nuestras Especialidades</span>
+                    <h2 class="section-title">Tratamientos Dentales Integrales</h2>
+                    <p class="section-description">Cuidamos tu salud dental con técnicas avanzadas y de mínima invasión para garantizar tu bienestar y comodidad.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1: Cirugías -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+                        <h3 class="service-card-title">Cirugías Especializadas</h3>
+                        <p class="service-card-desc">Extracción segura de terceros molares (muelas del juicio), piezas retenidas y tratamientos quirúrgicos bucales con recuperación acelerada.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-chevron-right"></i> Terceros molares</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Dientes retenidos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2: Endodoncias -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="service-card-title">Endodoncias</h3>
+                        <p class="service-card-desc">Salvamos tus piezas dentales mediante tratamientos de conducto precisos y sin dolor para eliminar la infección y aliviar molestias profundas.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-chevron-right"></i> Tratamiento de conducto</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Prevención dental</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3: Ortodoncia -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-arrows-to-circle"></i>
+                        </div>
+                        <h3 class="service-card-title">Ortodoncia</h3>
+                        <p class="service-card-desc">Alinea tus dientes y corrige problemas de mordida utilizando brackets metálicos, estéticos o alineadores invisibles de última generación.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-chevron-right"></i> Ortodoncia tradicional</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Ortodoncia estética</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4: Estética Dental -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="service-card-title">Estética y Limpieza</h3>
+                        <p class="service-card-desc">Devuelve el brillo natural a tus dientes mediante limpiezas profundas con ultrasonido, blanqueamiento dental y carillas estéticas.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-chevron-right"></i> Limpieza ultrasónica</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Blanqueamiento dental</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section" id="nosotros">
+            <div class="container about-container">
+                <div class="about-visual">
+                    <div class="about-clinic-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-label">Años de Confianza</span>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <img src="assets/hero_dental.png" alt="Dra. Ana Patricia Arellano en su consultorio" class="about-img">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Sobre Nosotros</span>
+                    <h2 class="section-title">Atención Dental de Calidad por la Dra. Ana Patricia Arellano</h2>
+                    <p class="about-desc">
+                        Egresada de la **Universidad Nacional Autónoma de México (U.N.A.M.)**, la Dra. Ana Patricia Arellano cuenta con amplia experiencia y la cédula profesional **841104** para brindarte seguridad y certeza en cada uno de tus tratamientos.
+                    </p>
+                    <p class="about-desc">
+                        En nuestro consultorio ubicado en la zona norte de Mérida, nos enfocamos en ofrecer un entorno relajante y libre de estrés, utilizando tecnología moderna y materiales certificados de alta calidad.
+                    </p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <h4>Formación Profesional UNAM</h4>
+                                <p>Cuidado avalado por una de las mejores escuelas de odontología.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-hospital-user"></i></div>
+                            <div>
+                                <h4>Trato Personalizado</h4>
+                                <p>Cada paciente recibe un diagnóstico único adaptado a sus necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section with Google Map -->
+        <section class="location-section" id="ubicacion">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="location-info">
+                        <span class="section-tag">Ubicación</span>
+                        <h2 class="section-title">Visítanos en Cholul</h2>
+                        <p class="location-address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <strong>Dirección:</strong><br>
+                            Calle 23a esq. con 24. Col. San Pedro Cholul,<br>
+                            Mérida, Yucatán. CP. 97138
+                        </p>
+                        
+                        <div class="location-details">
+                            <div class="detail-box">
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    <strong>Horarios de Atención:</strong>
+                                    <p>Lunes a Viernes: 9:00 AM - 7:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="detail-box">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong>Citas y Urgencias:</strong>
+                                    <p><a href="tel:9991402191">999 140 2191</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="https://maps.google.com/?q=Calle+23a+esq.+con+24.+Col.+San+Pedro+Cholul,+M%C3%A9rida+Yucat%C3%A1n+CP.+97138" class="btn btn-primary" target="_blank" id="open-maps-btn">
+                            Abrir en Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="location-map">
+                        <div class="map-iframe-container">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Calle%2023a%20esq.%20con%2024.%20Col.%20San%20Pedro%20Cholul,%20M%C3%A9rida%20Yucat%C3%A1n%20CP.%2097138&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Ubicación de la clínica dental de la Dra. Ana Patricia Arellano">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <div class="logo-icon white">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title white">CLÍNICA DENTAL</span>
+                        <span class="logo-subtitle white-sub">Dra. Ana Patricia Arellano</span>
+                    </div>
+                </div>
+                <p class="footer-tagline">Cuidado profesional de tu salud dental con la calidad y experiencia que mereces.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-phone"></i> Cel: <a href="tel:9991402191">999 140 2191</a></p>
+                <p><i class="fa-solid fa-envelope"></i> Email: citas@clinicadentalcholul.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Cholul, Mérida, Yucatán</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Clínica Dental Dra. Ana Patricia Arellano. Todos los derechos reservados.</p>
+                <p>Céd. Prof. 841104 | Egresada U.N.A.M.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
