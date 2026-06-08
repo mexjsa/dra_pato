@@ -207,6 +207,13 @@ img {
     color: var(--primary);
     font-size: 1.2rem;
     border: 1px solid var(--primary-light-hover);
+    overflow: hidden;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .logo-text {
